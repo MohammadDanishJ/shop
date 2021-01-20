@@ -85,7 +85,6 @@ $(".arrow2").click(function() {
     horizontalScroll(box2, $(this).hasClass("arrow-right2"));
 })
 
-}
 
 /*-------Horizontal Scroll Control------*/
 
@@ -124,16 +123,17 @@ function onScroll(event) {
             currLink.removeClass("highlight");
         }
     });
+}
 
 
 
-    function toggleMenu() {
-        $(".hamburger").toggleClass("is-active");
-        navbarMenu.classList.toggle("active");
-        burgerMenu.classList.toggle("active");
-    }
-    //------TEST----------------
-    //------TEST BELOW----------------
+function toggleMenu() {
+    $(".hamburger").toggleClass("is-active");
+    navbarMenu.classList.toggle("active");
+    burgerMenu.classList.toggle("active");
+}
+//------TEST----------------
+//------TEST BELOW----------------
 
-    //------TEST ABOVE----------------
-    //------TEST----------------
+//------TEST ABOVE----------------
+//------TEST----------------
