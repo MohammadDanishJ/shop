@@ -53,38 +53,37 @@ $(document).ready(function() {
 });
 
 
-if (window.location.href == "index.html") {
-    const burgerMenu = document.getElementById("burger");
-    const navbarMenu = document.getElementById("menu");
-    const header = document.querySelector('nav');
-    let current = 'Home';
-    // Responsive Navbar Toggle
-    burgerMenu.addEventListener("click", function() {
-        toggleMenu();
-    });
+const burgerMenu = document.getElementById("burger");
+const navbarMenu = document.getElementById("menu");
+const header = document.querySelector('nav');
+let current = 'Home';
+// Responsive Navbar Toggle
+burgerMenu.addEventListener("click", function() {
+    toggleMenu();
+});
 
-    window.addEventListener('scroll', () => {
-        let scrollPos = window.scrollY; //window.scrollY returns the number of pixels that the document is currently scrolled vertically.
-        if (scrollPos >= "10") {
-            header.style.padding = ".5rem 2rem";
-        } else if (scrollPos < "10") {
-            header.style.padding = "1rem 4rem";
-        }
-    });
+window.addEventListener('scroll', () => {
+    let scrollPos = window.scrollY; //window.scrollY returns the number of pixels that the document is currently scrolled vertically.
+    if (scrollPos >= "10") {
+        header.style.padding = ".5rem 2rem";
+    } else if (scrollPos < "10") {
+        header.style.padding = "1rem 4rem";
+    }
+});
 
 
-    /*-------Horizontal Scroll Control------*/
-    var box = $(".box-inner"),
-        x;
-    $(".arrow").click(function() {
-        horizontalScroll(box, $(this).hasClass("arrow-right"));
-    })
+/*-------Horizontal Scroll Control------*/
+var box = $(".box-inner"),
+    x;
+$(".arrow").click(function() {
+    horizontalScroll(box, $(this).hasClass("arrow-right"));
+})
 
-    var box2 = $(".box-inner2"),
-        x;
-    $(".arrow2").click(function() {
-        horizontalScroll(box2, $(this).hasClass("arrow-right2"));
-    })
+var box2 = $(".box-inner2"),
+    x;
+$(".arrow2").click(function() {
+    horizontalScroll(box2, $(this).hasClass("arrow-right2"));
+})
 
 }
 
@@ -125,17 +124,16 @@ function onScroll(event) {
             currLink.removeClass("highlight");
         }
     });
-}
 
 
 
-function toggleMenu() {
-    $(".hamburger").toggleClass("is-active");
-    navbarMenu.classList.toggle("active");
-    burgerMenu.classList.toggle("active");
-}
-//------TEST----------------
-//------TEST BELOW----------------
+    function toggleMenu() {
+        $(".hamburger").toggleClass("is-active");
+        navbarMenu.classList.toggle("active");
+        burgerMenu.classList.toggle("active");
+    }
+    //------TEST----------------
+    //------TEST BELOW----------------
 
-//------TEST ABOVE----------------
-//------TEST----------------
+    //------TEST ABOVE----------------
+    //------TEST----------------
