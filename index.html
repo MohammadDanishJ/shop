@@ -38,7 +38,9 @@
     <header id="HomeC">
         <div class="pos-abs-cntr">
             <h1 class="welcome-text">X Xxxxx, <span class="highlight">XXX 170</span></h1>
-            <button class="btn" onclick="alert('Currently We Do Not Accept Orders')">Order Now</button>
+            <button class="btn" onclick="$('html, body').animate({
+                scrollTop: $('#AboutC').offset().top
+            }, 'slow');">Order Now</button>
         </div>
     </header>
 
@@ -59,6 +61,7 @@
                     <h3 class="highlight">INR 170</h3>
                     <address>77A, XYZ Area City State PinCode</address>
                     <a class="fl-c" style="font-size: 18px;" href="https://wa.me/123456789"><span style="font-size: 20px;">&#9742;</span>&nbsp; 123-456-7890</a>
+                    <button class="btn" onclick="alert('Currently We Do Not Accept Orders')">Order Now</button>
                 </div>
             </div>
         </div>
