@@ -7,16 +7,66 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-    <title>Shop</title>
+    <title>Xxxxx Xxxx | Shop</title>
 
     <!-- Embedding poppins font from google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hamburger.css">
 </head>
 
 <body>
-    <h1>Default Shop</h1>
+    <nav class="navbar fl-c-b w100">
+        <div class="navbrand fl-c">
+            <h1><a href="./ishop.html" class="brand">Xxxxx Xxxx</a></h1>
+            <div class="burger hamburger" id="burger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+        <ul class="menu fl-c-b" id="menu">
+            <li class="menu-item"><a href="#HomeC" class="scrollable menu-link" id="Home">Home</a></li>
+            <li class="menu-item"><a href="#AboutC" class="scrollable menu-link" id="About">Best Deal</a></li>
+            <li class="menu-item"><a href="shop.html" class="menu-link">Shops</a></li>
+            <li class="menu-item"><a href="#ContactC" class="scrollable menu-link" id="Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="HomeC">
+        <div class="pos-abs-cntr">
+            <h1 class="welcome-text">X Xxxxx, <span class="highlight">XXX 170</span></h1>
+            <button class="btn" onclick="alert('Currently We Do Not Accept Orders')">Order Now</button>
+        </div>
+    </header>
+
+    <section class="sec-c" id="AboutC">
+        <div class="container">
+            <h1 class="text-white">Best Price Shop</h1>
+        </div>
+        <div class="pos-rel fl-c best-shop" id="7">
+            <div class="fl-c fl-c-d-res b-grey container m-2rem pdng0">
+
+                <div class="box box1 mgn0 wdt-web-fill-sm">
+                    <div class=" w100 h100 fl-c b-grey p-2rem">
+                        <img src="headerbg.jpg" alt="" class="logo">
+                    </div>
+                </div>
+                <div class="p-2rem fl-c fl-c-d-cl">
+                    <h1>Title Title</h1>
+                    <h3 class="highlight">INR 170</h3>
+                    <address>77A, XYZ Area City State PinCode</address>
+                    <a class="fl-c" style="font-size: 18px;" href="https://wa.me/123456789"><span style="font-size: 20px;">&#9742;</span>&nbsp; 123-456-7890</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="sec-c text-white" id="ContactC">
+        I am Footer, Use me to Contact Dev
+    </footer>
+
     <script src="jquery.js"></script>
     <script src="scripts.js"></script>
 </body>

@@ -116,12 +116,13 @@ function onScroll(event) {
     $('#menu a').each(function() {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos + 100 && refElement.position().top + refElement.height() > scrollPos + 100) {
-            $('#menu ul li a').removeClass("highlight");
-            currLink.addClass("highlight");
-        } else {
-            currLink.removeClass("highlight");
-        }
+        if ($(this).hasClass("scrollable"))
+            if (refElement.position().top <= scrollPos + 100 && refElement.position().top + refElement.height() > scrollPos + 100) {
+                $('#menu ul li a').removeClass("highlight");
+                currLink.addClass("highlight");
+            } else {
+                currLink.removeClass("highlight");
+            }
     });
 }
 
