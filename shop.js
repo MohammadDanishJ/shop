@@ -3,7 +3,6 @@ var url = new URL(url_string);
 var id = url.searchParams.get("id") || '0';
 //console.log(id);
 
-$('.shopHolder').css('margin-top', $('nav').outerHeight());
 
 if (id != '0') {
     $('#id').show();
