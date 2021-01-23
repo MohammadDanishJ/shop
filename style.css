@@ -207,6 +207,7 @@ button {
     height: 22rem;
     width: 16rem;
     display: inline-block;
+    backdrop-filter: blur(10px);
 }
 
 .box1 {
@@ -478,7 +479,7 @@ button {
     color: #f1f1f1;
     border: 2px solid rgba(255, 255, 255, 0.12);
     background-color: rgba(0, 0, 0, 0.12);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(1px);
     transition: all .3s linear;
 }
 
@@ -486,7 +487,7 @@ button {
     outline: none;
     width: 90%;
     border-color: rgba(48, 121, 237, .7);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
 }
 
 .search-box::-webkit-search-cancel-button {
@@ -506,6 +507,14 @@ button {
     margin: 0 5%;
     width: -webkit-fill-available;
     backdrop-filter: blur(10px);
+}
+
+.shapes {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #3079ed;
+    top: 10px;
 }
 
 

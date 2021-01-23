@@ -1,7 +1,5 @@
 $(document).ready(function() {
-
     $(document).on("scroll", onScroll);
-
     //smoothscroll
     $('a[href^="#"]').on('click', function(e) {
         e.preventDefault();
@@ -14,7 +12,6 @@ $(document).ready(function() {
 
         if ($(window).width() < 768)
             toggleMenu();
-
 
         var target = this.hash,
             menu = target;
@@ -48,7 +45,7 @@ $(document).ready(function() {
     })
 
     $(".visit-store").click(function() {
-        window.location.href = "shop.html";
+        window.location.href = "shop.php";
     })
 });
 
@@ -56,6 +53,7 @@ $(document).ready(function() {
 const burgerMenu = document.getElementById("burger");
 const navbarMenu = document.getElementById("menu");
 const header = document.querySelector('nav');
+const headerBG = document.querySelector('header');
 let current = 'Home';
 // Responsive Navbar Toggle
 burgerMenu.addEventListener("click", function() {
@@ -117,16 +115,18 @@ function onScroll(event) {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if ($(this).hasClass("scrollable"))
-            if (refElement.position().top <= scrollPos + 100 && refElement.position().top + refElement.height() > scrollPos + 100) {
-                $('#menu ul li a').removeClass("highlight");
-                currLink.addClass("highlight");
-            } else {
-                currLink.removeClass("highlight");
+            try {
+                if (refElement.position().top <= scrollPos + 100 && refElement.position().top + refElement.height() > scrollPos + 100) {
+                    $('#menu ul li a').removeClass("highlight");
+                    currLink.addClass("highlight");
+                } else {
+                    currLink.removeClass("highlight");
+                }
+            } catch {
+                //console.log("Nothing to Highlight");
             }
     });
 }
-
-
 
 function toggleMenu() {
     $(".hamburger").toggleClass("is-active");

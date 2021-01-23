@@ -10,6 +10,7 @@
 <body>
     <header id="AboutC">
         <div class="pos-abs-cntr w100">
+            <h1 class="welcome-text p-2rem">Hola, Its Sole Shops <!-- <span class="highlight">XXX 170</span></h1> -->
             <input class="search-box" type="search" name="search" id="search" placeholder="Search Your Desired Shop...">
             <div class="search-cont pos-abs fl-c fl-c-d-cl b-grey p-2rem">
                 <h1>I Am Search Result</h1>
@@ -17,7 +18,8 @@
                 <h1>I Am Search Result</h1>
                 <h1>I Am Search Result</h1>
             </div>
-        </div></div>
+        </div>
+        </div>
     </header>
     <section class="sec-c" id="AboutC">
         <div class="container">
